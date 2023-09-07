@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+
+    background-color: white;
+    opacity: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.header img {
+    float: left;
+    width: 500px;
+    height: 350px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header h1 {
+    color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 30px;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+
+}
+/*Använder ntn-child för att börja texten i höger göra jämn med bilden
+och om texten är i väster bliden vara höger sidan */
+
+article:nth-child(odd){
+    text-align: right;
+}
+
+article:nth-child(odd) .img {
+    grid-column: 2;
+
+}
+
+article:nth-child(odd) .content {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+article img {
+    grid-column: 1;
+
+}
+
+article .content {
+    grid-column: 2;
+    padding: 20px;
+    box-sizing: border-box;
+
+    font-size: x-large;
+    text-align: center;
+}
+
+article .content p{
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+article img {
+    width: 95%;
+    object-fit: cover;
+}
+
+footer{
+    padding: 50px;
+}
+button {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid black;
+    background-color: black;
+    opacity: 60%;
+    margin-top: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+button:hover{
+    background-color: antiquewhite;
+    opacity: 30%;
+
+}
+
+button a:hover{
+    color: black;
+
+}

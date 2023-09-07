@@ -1,0 +1,78 @@
+*{
+    margin :0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+
+header{
+    height: 80vh;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1554290712-e640351074bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGluc3BpcmF0aW9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 3rem;
+    text-align: right;
+}
+
+h1{
+    font-size: 40px;
+}
+
+
+/* how to style main article in the main paraghpy*/
+main {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+
+}
+
+main article{
+    width: 100%;
+    background-color: grey;
+    opacity: 50%;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 50px;
+
+
+}
+
+main article p {
+    font-size: x-large;
+    color: white;
+
+}
+
+button {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid black;
+    background-color: black;
+    opacity: 60%;
+    margin-top: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+button:hover{
+    background-color: antiquewhite;
+    opacity: 30%;
+
+}
+
+button a:hover{
+    color: black;
+
+}
